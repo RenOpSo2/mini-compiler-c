@@ -33,5 +33,6 @@ make test
 ```
 
 ## Refrensi
-[tutorial-build-compiler-part1](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://norasandler.com/2017/11/29/Write-a-Compiler.html&ved=2ahUKEwjjhe-Sj92TAxUgTWwGHbl8FrYQFnoECBcQAQ&usg=AOvVaw30y4sHSOCf-sg_I0rZq2Km)
-[compiler-theory](https://en.wikipedia.org/wiki/Compiler)
+- [tutorial-build-compiler-part1](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://norasandler.com/2017/11/29/Write-a-Compiler.html&ved=2ahUKEwjjhe-Sj92TAxUgTWwGHbl8FrYQFnoECBcQAQ&usg=AOvVaw30y4sHSOCf-sg_I0rZq2Km)
+
+- [compiler-theory](https://en.wikipedia.org/wiki/Compiler)
