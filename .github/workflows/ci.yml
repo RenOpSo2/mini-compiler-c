@@ -23,8 +23,7 @@ jobs:
       
     - name: Run unit tests
       run: |
-        make build-test
-        ./build/test_runner
+        make test
       
     - name: Run integration tests manually
       run: |
