@@ -16,11 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # pastikan Anda menambahkan secret GEMINI_API_KEY di repo Settings -> Secrets and variables -> Actions
+  
       - name: Run Gemini CLI
         uses: google/gemini-cli@v1
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # opsional: jika action menerima github token sebagai input, bisa tetap di-pass:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        
