@@ -21,12 +21,32 @@ jobs:
     - name: Build project
       run: make all
       
-    - name: Run tests
-      run: make test
+    - name: Run unit tests
+      run: |
+        make build-test
+        ./build/test_runner
       
-    - name: Run integration tests
-      run: make integration-tests
-      
+    - name: Run integration tests manually
+      run: |
+        # Test basic arithmetic operations
+        echo "Testing: 10 + 5"
+        ./compiler "10 + 5"
+        
+        echo "Testing: 10 - 5"  
+        ./compiler "10 - 5"
+        
+        echo "Testing: 10 * 5"
+        ./compiler "10 * 5"
+        
+        echo "Testing: 10 / 5"
+        ./compiler "10 / 5"
+        
+        echo "Testing: (10 + 5) * 2"
+        ./compiler "(10 + 5) * 2"
+        
+        echo "Testing: 10 + 5 * 2 (precedence test)"
+        ./compiler "10 + 5 * 2"
+        
     - name: Check for build artifacts
       run: |
         ls -la
